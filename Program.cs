@@ -15,7 +15,7 @@ namespace ParseAddress
     class Program
     {
         
-        static void Main(string[] args)
+        static void Main(string[] args)  
         {
             ArrayList data;
             if (args.Length == 0)
@@ -96,8 +96,8 @@ namespace ParseAddress
             if(errorsheet.Count > 1)
             {
                 Console.WriteLine("Записи приведённый выше не распарсились, возможно в них есть ошибка или недопустимые знаки.");
-                Console.WriteLine("\n Или отправить на стандартизацию, каждая стандартизация стоит 10 копеек: (Ввести y-Y)");
-                Console.WriteLine("\n Хотите исправить ошибки в исходном документе вручную: (Ввести n-N или другой символ)");
+                Console.WriteLine("Отправить на стандартизацию, каждая стандартизация стоит 10 копеек: (Ввести y-Y)");
+                Console.WriteLine("\n Или хотите исправить ошибки в исходном документе вручную: (Ввести n-N или другой символ)");
                 
                 string input = Console.ReadLine();
                 if (input == "y" ^ input == "Y")
